@@ -18,6 +18,7 @@ intNumber = int(input("Enter your number: ")) #this is input int variable type
 floatNumber = float(input("Enter your decimal number (01.00): ")) #this is input float variable type
 print(f"Your int number is: {intNumber}, and your decimal number is: {floatNumber}\n")
 
+#test
 x = int(input("Enter your first number: "))
 y = int(input("Enter your second number: "))
 
@@ -26,3 +27,13 @@ def add(a, b):
 
 result = add(x, y)
 print("The result for the sum is: ", result)
+
+#scope variable
+globalVariable = "This is global variable" #outside function, can be accessed anywhere
+
+def funcLocalVariable():
+    localVariable = "This is local variable" #inside function, can only be accessed inside the function
+    print(localVariable)
+
+print(globalVariable)
+funcLocalVariable()
