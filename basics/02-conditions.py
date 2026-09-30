@@ -26,3 +26,29 @@ print(goat)
 print("messi" in goat, "//this is output for \"messi\" in goat") #output true, because messi is in the list
 print("gw" not in goat, "//this is output for \"gw\" not in goat") #output false, because gw is in the list
 print("mbappe" not in goat, "//this is output for \"mbappe\" not in goat\n") #output true, because mbappe is not in the list
+
+#if condition
+isStudent = False
+student = isStudent if isStudent else "Not a student"
+print("Student is False = " + student + "\n")
+
+Hp = 100
+passiveSkill = Hp < 30
+print("Hp = ", Hp)
+if passiveSkill:
+    print("Passive skill is active\n")
+elif Hp < 50:
+    print("Passive skill is almost active, need atleast <30 Hp\n")
+else:
+    print("Passive skill is not active\n") 
+    
+
+a = 1
+b = 2
+print("a = ", a)
+print("b = ", b)
+if a > b and a>=b:
+    print("a is greater than b\n")
+else:
+    print("a is not greater than b\n")
+    
